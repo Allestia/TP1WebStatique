@@ -15,28 +15,63 @@
             <li><u>Abbr&eacuteviations</u></li>
         </ul>
         <hr>
-        <div id="Formulaire">
-            <div id = "Etudiant">
-                <h1>1.Etudiant</h1>
+        <ol>
+            <h1><li>Etudiant</li></h1> 
                 <form action="textlistforms.html" method="get">
-                    Pr&eacutenom:<input type="text" name="prenom">
-                    Nom:<input type="text" name="nom"><br>
+                    <p>
+                        Pr&eacutenom:<input type="text" name="prenom">
+                        Nom:<input type="text" name="nom"><br>
+                    </p>
+                    <p>
+                        Ann&eacutee d'&eacutetudes
+                        <input type="radio" name="annee_etude" value="A1"> 1A
+                        <input type="radio" name="annee_etude" value="A2"> 2A
+                    </p>
+                    <p>
+                        Remarques :<br>
+                        <textarea name="remarques" cols="50" rows="5"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Valider">
+                    </p>
+                    <hr>
                 </form>
-                <p>Ann&eacutee d'&eacutetudes
-                    <form action="textlistforms.html">
-                        <label for="1A">
-                            1A
-                        </label>
-                        <label for="2A">
-                            2A
-                        </label>
-                    </form>
-                </p>
-                <p>Remarques :
-                    <textarea name="remarques" cols="30" rows="10"></textarea>
-                </p>
-            </div>
-        </div>
+            <h1><li>Enseignant</li></h1>
+                <form action="medias.html" method="get">
+                    <p>
+                        Pr&eacutenom:<br><input type="text" name="prenom"><br>
+                        Nom:<br><input type="text" name="nom"><br>
+                    </p>
+                    <p>
+                        Site :
+                        <select name="site">
+                            <option>Brest</option>
+                            <option>Nantes</option>
+                            <option>Rennes</option>
+                        </select>
+                    </p>
+                    <p>
+                        Password :
+                        <input type="password">
+                    </p>
+                    <p>
+                        <input type="submit" value="Valider">
+                    </p>
+                    <hr>
+                </form>
+            <h1><li>Abbreviations</li></h1>
+                <dl>
+                    <h3><dt>ISEN</dt></h3>
+                    <br>
+                    <dd>Institut Sup&eacuterieure de l&#39Electronique et du Num&eacuterique</dd>
+                    <br>
+                    <h3><dt>HTML</dt></h3>
+                    <br>
+                    <dd>HyperText Markup Language</dd>
+                </dl>
+                <br>
+                <hr>
+        </ol>
     </body>
 
 </html>
